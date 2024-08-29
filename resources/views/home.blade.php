@@ -1,0 +1,978 @@
+@extends('layouts.master')
+@section('content')
+<style>
+    body.equal-height .prd-img:not(.prd-img--noequal) img {
+        
+        object-fit:contain !important;
+        height: 300px;
+    }
+    body.equal-height .prd-img:not(.prd-img--noequal){
+        
+        padding-bottom:137% !important;
+    }
+    .title-wrap:not(:last-child), .page-title {
+    margin: 30px 0 30px;
+}
+</style>
+<div class="page-content">
+   <div class="holder fullwidth full-nopad mt-0">
+      <div class="container">
+         <div class="bnslider-wrapper">
+            <div class="bnslider bnslider--lg keep-scale" id="bnslider-001" data-slick='{"arrows": true, "dots": true}' data-autoplay="false" data-speed="12000" data-start-width="1917" data-start-height="764" data-start-mwidth="1550" data-start-mheight="1000">
+               <div class="bnslider-slide">
+                  <div class="bnslider-image-mobile lazyload" data-bgset="{{url('public/assets/frontend/images/back.png')}}" style="background-size: cover;background-color: #fff;background-position: top;"></div>
+                  <div class="bnslider-image lazyload" data-bgset="{{url('public/assets/frontend/images/back.png')}}" style="background-size: cover;background-color: #fff;background-position: top;"></div>
+                  <div class="bnslider-text-wrap bnslider-overlay ">
+                     <div class="bnslider-text-content txt-middle txt-right txt-middle-m txt-center-m">
+                        <div class="bnslider-text-content-flex ">
+                           <div class="bnslider-vert w-s-60 w-ms-100" style="padding: 0px">
+                              <div class="bnslider-text order-1 mt-sm bnslider-text--md text-center data-ini" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#282828" data-fontweight="700" data-fontline="1.5">Best Price This Year</div>
+                              <div class="bnslider-text order-2 mt-sm bnslider-text--xs text-center data-ini" data-animation="fadeInUp" data-animation-delay="1000" data-fontcolor="#7c7c7c" data-fontweight="400" data-fontline="1.5">Ecommerce Website </div>
+                              <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn" data-animation-delay="2000" style="opacity: 1;"> <a href="{{ route('home.index')}}" target="_blank" class="btn"> Shop now </a> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="bnslider-slide">
+                  <div class="bnslider-image-mobile lazyload" data-bgset="{{url('public/assets/frontend/images/banner0.png')}}"></div>
+                  <div class="bnslider-image lazyload" data-bgset="{{url('public/assets/frontend/images/banner0.png')}}"></div>
+                  <div class="bnslider-text-wrap bnslider-overlay ">
+                     <div class="bnslider-text-content txt-middle txt-left txt-middle-m txt-center-m">
+                        <div class="bnslider-text-content-flex ">
+                           <div class="bnslider-vert w-s-60 w-ms-100" style="padding: 0px">
+                              <div class="bnslider-text order-1 mt-0 bnslider-text--md text-center data-ini" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#282828" data-fontweight="700" data-fontline="1.5">Best Price This Year</div>
+                              <div class="bnslider-text order-2 mt-sm bnslider-text--xs text-center data-ini" data-animation="fadeInUp" data-animation-delay="1000" data-fontcolor="#7c7c7c" data-fontweight="400" data-fontline="1.5">Ecommerce Website</div>
+                              <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn" data-animation-delay="2000" style="opacity: 1;"> <a href="{{ route('home.index')}}" target="_blank" class="btn"> Shop now </a> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="bnslider-slide slick-slide is-paused" data-autoplay="true" data-video-type="video" data-slick-index="2" aria-hidden="true" style="width: 1903px; position: relative; left: -3806px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" id="slick-slide02">
+                  <div class="video-wrap">
+                     <video playsinline="" loop="" preload="auto">
+                        <source src="https://cdn.shopify.com/s/files/1/0201/0942/6742/files/video-girl.mp4?v=1594287483" type="video/mp4">
+                     </video>
+                     <div class="video-control visible">
+                        <div class="video-play js-video-slider-play"><i class="icon-play"></i></div>
+                        <div class="video-stop js-video-slider-stop"><i class="icon-pause"></i></div>
+                     </div>
+                  </div>
+                  <div class="bnslider-text-wrap bnslider-overlay ">
+                     <div class="bnslider-text-content txt-middle txt-center txt-middle-m txt-center-m">
+                        <div class="bnslider-text-content-flex ">
+                           <div class="bnslider-vert " style="padding: 0px">
+                              <div class="bnslider-text order-1 mt-sm bnslider-text--md text-center data-ini" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#282828" data-fontweight="700" data-fontline="1.5">Live life in Comfort</div>
+                              <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn" data-animation-delay="2000" style="opacity: 1;"> <a href="#" target="_self" class="btn"> Shop now </a> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bnslider-arrows container-fluid">
+               <div></div>
+            </div>
+            <div class="bnslider-dots container-fluid"></div>
+         </div>
+      </div>
+   </div>
+   <!--<div class="holder holder-mt-medium ">-->
+   <!--   <div class="container">-->
+   <!--      <a href="javascript:;" target="_blank" class="bnr-wrap bnr-">-->
+   <!--         <div class="bnr custom-caption image-hover-scale bnr--middle bnr--right bnr--fullwidth">-->
+   <!--            <div class="bnr-img d-none d-sm-block image-container" style="padding-bottom: 41.36752136752137%">-->
+   <!--               <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/banner-fashion2-full.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/banner-fashion2-full.webp" class="lazyload fade-up" alt="">-->
+   <!--            </div>-->
+   <!--            <div class="bnr-img d-sm-none image-container" style="padding-bottom: 74.3139407244786%"> <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/banner-fashion2-full-m.webp" class="lazyload fade-up" alt=""></div>-->
+   <!--            <div class="bnr-caption text-center" style="padding: 4% 4%; ">-->
+   <!--               <div class="bnr-caption-inside w-s-50 w-ms-100 title-wrap">-->
+   <!--                  <h2 class="h1-style">The best trends<br class="d-sm-none"> of summer 2023</h2>-->
+   <!--                  <div class="h-sub mt-0">eCommerce Website</div>-->
+   <!--                  <div class="bnr-btn inherit mt-sm order-3">-->
+   <!--                     <div class="btn">Buy Now</div>-->
+   <!--                  </div>-->
+   <!--               </div>-->
+   <!--            </div>-->
+   <!--         </div>-->
+   <!--      </a>-->
+   <!--   </div>-->
+   <!--</div>-->
+   @if(!empty($masterCategories))
+   @foreach($masterCategories as $key => $masterCategory)
+   <div class="holder">
+      <div class="container">
+         <div class="title-wrap text-center">
+            <h2 class="h1-style">New arrival for {{$masterCategory->master_category_name}}</h2>
+            <div class="h-sub maxW-825">Hurry up! Limited</div>
+         </div>
+         <div class="prd-grid-wrap position-relative">
+            <div class="prd-grid data-to-show-4 data-to-show-lg-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-2 js-category-grid" data-grid-tab-content>
+                @if(!empty($masterCategory->products))
+           
+                @foreach($masterCategory->products as $key =>$product)
+                
+                @if($key < 4)
+               
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow @if(!empty($product->wishlist))
+                 <?php  $wishlist = getProductWishlist($product->id); ?>
+                 @if(!empty($wishlist) && $wishlist->product_id == $product->id )prd--in-wishlist
+                  @endif
+                @endif" data-likeStatus{{$product->id}}="1">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                      <a href="{{route('product.show',$product->id)}}" class="prd-img image-hover-scale image-container">
+                           <img src="{{asset('public/uploads/products/')}}/{{$product->image }}" data-src="{{asset('public/uploads/products/')}}/{{$product->image }}" alt="Oversized Cotton Blouse" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-new"><span>New</span></div>
+
+                              <div class="label-sale">
+                                 <span> {{$percentage = round( ( $product->previous_price - $product->current_price ) / $product->previous_price * 100 ).'%' }}; <span class="sale-text">Sale</span></span>
+                                 <div class="countdown-circle">
+                                    <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist" data-productId="{{ $product->id}}">
+                           <i class="icon-heart-stroke"></i>
+                           </a>
+                           <a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist" data-productId="{{ $product->id}}"><i class="icon-heart-hover"></i></a> 
+                         
+                        </div>
+                     <?php $images = json_decode($product->images);
+                        
+                      ?>
+                        <ul class="list-options color-swatch">
+                            @if(!empty(is_array($images) || is_object($images) && !empty($images)))
+                            @foreach($images as $key => $image)
+                           
+                           <li data-image="{{asset('public/uploads/products/')}}/{{$image }}" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" >
+                              <img src="{{asset('public/uploads/products/')}}/{{$image }}" class="lazyload fade-up" alt="image"></a>
+                           </li>
+                           @endforeach
+                           @endif
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"> <?php  $data = getUserRatings($product->id);
+                                  $count=number_format((float)((float)5 - (float) $data[0]->avg_rating ), 1, '.', '');?>
+                                   (@if(!empty($data[0]->avg_rating)){{ $data[0]->avg_rating }} @else 0 @endif)&nbsp;&nbsp;
+                                         @for($i=0.5;$i < $data[0]->avg_rating; $i++)                                       
+                                         <i class="icon-star-fill fill"></i>
+                                          @endfor
+                                          @if(( $data[0]->avg_rating ==0.5 || $data[0]->avg_rating ==1.5 || $data[0]->avg_rating ==2.5 || $data[0]->avg_rating ==3.5 || $data[0]->avg_rating ==4.5 ))
+
+                                         <i class="fa-solid fa-star-half-stroke fill" style="color:#ffd400;"></i>
+                                          @endif
+                                        @for($i=0.5;$i < $count; $i++)
+                                   <i class="fa-regular fa-star fill" style="color:#ffd400;"></i>
+                                 @endfor </div>
+                           <div class="prd-tag"><a href="#">{{$product->brand->brand_name}} </a></div>
+                           <h2 class="prd-title"><a href="{{route('product.show',$product->id)}}">{{$product->product_name}} 
+                           
+                           <div class="prd-description"> {{ $product->short_description }} </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                             
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-old">$ {{$product->previous_price}}</div>
+                              <div class="price-new">$ {{$product->current_price}}</div>
+                           </div>
+                          <!--  <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               @endif
+               @endforeach
+               @endif
+               <!-- <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels"> </div>
+                        </a>
+                        <div class="prd-circle-labels">
+                           <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                           <div class="colorswatch-label colorswatch-label--variants js-prd-colorswatch">
+                              <i class="icon-palette"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></i>
+                              <ul>
+                                 <li data-image="images/skins/fashion/products/product-06-1.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.html" alt=""></a></li>
+                                 <li data-image="images/skins/fashion/products/product-06-color-2.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.html" alt=""></a></li>
+                                 <li data-image="images/skins/fashion/products/product-06-color-3.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.html" alt=""></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-2.webp"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Seiko</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Midi Dress with Belt</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="product.html" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" alt="Short Sleeve Blouse" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-sale">
+                                 <span>-10% <span class="sale-text">Sale</span></span>
+                                 <div class="countdown-circle">
+                                    <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a> </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">FOXic</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Short Sleeve Blouse</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-old">$ 200</div>
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" alt="Peg Cropped Cuffed Pants" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-new"><span>New</span></div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a> </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" class="active">
+                              <a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Fitforlegend</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Peg Cropped Cuffed Pants</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+
+            </div>
+         </div>
+      </div>
+   </div>
+   @endforeach
+   @endif
+  <!--  <div class="holder">
+      <div class="container">
+         <div class="title-wrap text-center">
+            <h2 class="h1-style">New arrival for Womens</h2>
+            <div class="h-sub maxW-825">Hurry up! Limited</div>
+         </div>
+         <div class="prd-grid-wrap position-relative">
+            <div class="prd-grid data-to-show-4 data-to-show-lg-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-2 js-category-grid" data-grid-tab-content>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" alt="Oversized Cotton Blouse" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-new"><span>New</span></div>
+                              <div class="label-sale">
+                                 <span>-10% <span class="sale-text">Sale</span></span>
+                                 <div class="countdown-circle">
+                                    <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist">
+                           <i class="icon-heart-stroke"></i>
+                           </a>
+                           <a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> 
+                           <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html">
+                           <i class="icon-eye"></i><span>QUICK VIEW</span></a> 
+                        </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-1.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Banita</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Oversized Cotton Blouse</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-old">$ 200</div>
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels"> </div>
+                        </a>
+                        <div class="prd-circle-labels">
+                           <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                           <div class="colorswatch-label colorswatch-label--variants js-prd-colorswatch">
+                              <i class="icon-palette"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></i>
+                              <ul>
+                                 <li data-image="images/skins/fashion/products/product-06-1.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.html" alt=""></a></li>
+                                 <li data-image="images/skins/fashion/products/product-06-color-2.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.html" alt=""></a></li>
+                                 <li data-image="images/skins/fashion/products/product-06-color-3.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.html" alt=""></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-2.webp"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Seiko</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Midi Dress with Belt</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" alt="Short Sleeve Blouse" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-sale">
+                                 <span>-10% <span class="sale-text">Sale</span></span>
+                                 <div class="countdown-circle">
+                                    <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a> </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Fitforlegend</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Short Sleeve Blouse</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-old">$ 200</div>
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" alt="Peg Cropped Cuffed Pants" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-new"><span>New</span></div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a> </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" class="active">
+                              <a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Fitforlegend</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Peg Cropped Cuffed Pants</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="holder">
+      <div class="container">
+         <div class="title-wrap text-center">
+            <h2 class="h1-style">New arrival for Kids</h2>
+            <div class="h-sub maxW-825">Hurry up! Limited</div>
+         </div>
+         <div class="prd-grid-wrap position-relative">
+            <div class="prd-grid data-to-show-4 data-to-show-lg-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-2 js-category-grid" data-grid-tab-content>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="{{route('product.index')}}" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" alt="Oversized Cotton Blouse" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-new"><span>New</span></div>
+                              <div class="label-sale">
+                                 <span>-10% <span class="sale-text">Sale</span></span>
+                                 <div class="countdown-circle">
+                                    <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist">
+                           <i class="icon-heart-stroke"></i>
+                           </a>
+                           <a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> 
+                           <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html">
+                           <i class="icon-eye"></i><span>QUICK VIEW</span></a> 
+                        </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-1.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-01-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Banita</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Oversized Cotton Blouse</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-old">$ 200</div>
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="product.html" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels"> </div>
+                        </a>
+                        <div class="prd-circle-labels">
+                           <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                           <div class="colorswatch-label colorswatch-label--variants js-prd-colorswatch">
+                              <i class="icon-palette"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></i>
+                              <ul>
+                                 <li data-image="images/skins/fashion/products/product-06-1.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.html" alt=""></a></li>
+                                 <li data-image="images/skins/fashion/products/product-06-color-2.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.html" alt=""></a></li>
+                                 <li data-image="images/skins/fashion/products/product-06-color-3.webp"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.html" alt=""></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-2.webp"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-02-3.webp"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Seiko</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Midi Dress with Belt</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="product.html" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" alt="Short Sleeve Blouse" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-sale">
+                                 <span>-10% <span class="sale-text">Sale</span></span>
+                                 <div class="countdown-circle">
+                                    <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a> </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-03-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">Fitforlegend</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Short Sleeve Blouse</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-old">$ 200</div>
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                  <div class="prd-inside">
+                     <div class="prd-img-area">
+                        <a href="product.html" class="prd-img image-hover-scale image-container">
+                           <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" alt="Peg Cropped Cuffed Pants" class="js-prd-img lazyload fade-up">
+                           <div class="foxic-loader"></div>
+                           <div class="prd-big-squared-labels">
+                              <div class="label-new"><span>New</span></div>
+                           </div>
+                        </a>
+                        <div class="prd-circle-labels"> <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a> <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a> </div>
+                        <ul class="list-options color-swatch">
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" class="active">
+                              <a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-1.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-3.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                           <li data-image="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name">
+                              <img src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/products/product-04-2.webp" class="lazyload fade-up" alt="Color Name"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="prd-info">
+                        <div class="prd-info-wrap">
+                           <div class="prd-info-top">
+                              <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           </div>
+                           <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                           <div class="prd-tag"><a href="#">FOXic</a></div>
+                           <h2 class="prd-title"><a href="{{route('product.index')}}">Peg Cropped Cuffed Pants</a></h2>
+                           <div class="prd-description"> Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia. </div>
+                           <div class="prd-action">
+                              <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                           </div>
+                        </div>
+                        <div class="prd-hovers">
+                           <div class="prd-circle-labels">
+                              <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                              <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                           </div>
+                           <div class="prd-price">
+                              <div class="price-new">$ 180</div>
+                           </div>
+                           <div class="prd-action">
+                              <div class="prd-action-left">
+                                 <form action="#"> <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.webp", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button> </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> -->
+   <!--<div class="holder holder-mt-medium">-->
+   <!--<div class="container">-->
+   <!--<div class="title-wrap text-center ">-->
+   <!--  <h2 class="h1-style text-center"><a href="blog.html" title="View all">Latest From Blog</a></h2>-->
+   <!--  <div class="carousel-arrows" style="margin:0 auto 65px; width:50px;"></div>-->
+   <!--</div>-->
+   <!--<div class="post-prws post-prws-carousel post-prws--row js-post-prws-carousel" data-slick='{"slidesToShow": 3, "responsive": [{"breakpoint": 992,"settings": {"slidesToShow": 2 }},{"breakpoint": 480,"settings": {"slidesToShow": 1 }}]}'>-->
+   <!--  <div class="post-prw-vert col"> -->
+   <!--     <a href="blog-post.html" class="post-prw-img image-hover-scale image-container" style="padding-bottom: 54.44%"> -->
+   <!--         <img class="fade-up w-100 lazyload" alt="The High-Street Brand Fashion" src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/blog/blog-fashion-02.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/blog/blog-fashion-02.webp"> </a>-->
+   <!--      <h4 class="post-prw-title"><a href="blog-post.html">The High-Street Brand Fashion</a></h4>-->
+   <!--      <div class="post-prw-links">-->
+   <!--          <div class="post-prw-date"><i class="icon-calendar1"></i> June 9, 2020 </div>-->
+   <!--      </div>-->
+   <!--  </div>-->
+   <!--  <div class="post-prw-vert col"> <a href="blog-post.html" class="post-prw-img image-hover-scale image-container" style="padding-bottom: 54.44%">-->
+   <!--   <img class="fade-up w-100 lazyload" alt="The High-Street Brand Fashion" src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/blog/blog-fashion-03.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/blog/blog-fashion-03.webp"> </a>-->
+   <!--      <h4 class="post-prw-title"><a href="blog-post.html">Trends to Try This Season</a></h4>-->
+   <!--      <div class="post-prw-links">-->
+   <!--          <div class="post-prw-date"><i class="icon-calendar1"></i> June 3, 2020 </div>-->
+   <!--      </div>-->
+   <!--  </div>-->
+   <!--  <div class="post-prw-vert col"> <a href="blog-post.html" class="post-prw-img image-hover-scale image-container" style="padding-bottom: 54.44%"> -->
+   <!--     <img class="fade-up w-100 lazyload" alt="The High-Street Brand Fashion" src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/blog/blog-fashion-04.webp" data-src="https://big-skins.com/frontend/foxic-html-demo/images/skins/fashion/blog/blog-fashion-04.webp"> </a>-->
+   <!--      <h4 class="post-prw-title"><a href="blog-post.html">Working From Home</a></h4>-->
+   <!--      <div class="post-prw-links">-->
+   <!--          <div class="post-prw-date"><i class="icon-calendar1"></i> June 1, 2020 </div>-->
+   <!--      </div>-->
+   <!--  </div>-->
+   <!--</div>-->
+   <!--</div>-->
+   <!--</div>-->
+   
+</div>
+@if(!empty($coupon)&& isset($coupon->discount))
+<div id="popupNewsletter" class="modal-info-content js-newslettermodal newslettermodal--classic p-0" style="display: none;" data-pause="2000" data-expires="0" data-only-index="false">
+        <div class="row align-items-center">
+            <div class="col-sm-18 d-none d-sm-block">
+                <div class="popup-newsletter-image image-container d-flex flex-column align-items-center justify-content-center py-8 px-0 text-center bg-cover" style="padding-bottom: 400px;background: url('https://big-skins.com/frontend/foxic-html-demo/images/promo-fashion.webp')no-repeat; background-size:;max-height: 480px; min-height: 480px;">
+                
+            <h2 class="promoPopup-title2">FLAT {{$coupon->discount}}% OFF</h2>
+            <h1 class="promoPopup-title1 custom-color" style="color: #fb317d">SALE</h1>
+           <div class="promoPopup-promo-time">
+         <div class="promoPopup-promo-time-text1 heading-font">
+             </div>
+              <div class="promoPopup-promo-time-text2 heading-font"> Use code -  {{$coupon->code}}</div>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div data-fancybox-close class="fancybox-close-small modal-close"><i class="icon-close"></i></div>
+    
+    </div>
+     <div class="js-popupPromo" data-src="ajax/promo-modal-fashion.html" data-effect="fireworks" data-expires="0" data-only-index="true"></div>
+     @endif
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+       /* add to product wishlist */
+       $(document).on('click','.circle-label-compare',function(){
+          $.ajaxSetup({
+             headers: {
+                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+             }
+         });
+          var product_id = $(this).attr('data-productId');
+          var likeStatus = $('.hovered.prd--in-wishlist').attr('data-likeStatus'+product_id);               
+           if (likeStatus == undefined) {
+             var likeStatus = 0;
+           } 
+
+         $.ajax({
+               url    :"{{ route('account-wishlist.store') }}",
+               type   : "post",
+               data   :{'product_id':product_id,'likeStatus':likeStatus,'_token': '{{ csrf_token() }}'},
+   
+               success: function(data) {   
+                  if(data.Is_login=='Not'){
+                    location.replace("{{ route('login.index') }}");
+                    }
+               }
+
+              })
+        
+       });
+    });
+</script>
+@endsection

@@ -1,0 +1,60 @@
+
+
+
+
+[class*=sidebar-dark-] {
+    background-color: #fff !important;
+}
+
+[class*=sidebar-dark] .brand-link {
+    border-bottom: none !important;
+}
+
+.nav-sidebar .nav-item>.nav-link {
+    color: #000000;
+}
+
+[class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus {
+    background-color: rgba(255,255,255,.1);
+    color: #000 !important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #007bff;
+    color: #fff !important;
+}
+
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link {
+    color: #000000 !important;
+}
+
+.card-primary:not(.card-outline)>.card-header{
+    display: none !important;
+}
+
+td a{
+    margin: 0px 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255) !important;
+    background: #0080f9;
+}
+
+tbody tr td:last-child{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
